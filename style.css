@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #39c5bb;
+}
+
+h1 {
+    font-size: 3em;
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+details {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-size : 1.5em;
+    text-align: center;
+}
+
+
+.photo {
+    width: 20%;
+    height: 20%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ad {
+    position: fixed;
+    z-index: 1000;
+}
+
+.ad-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 600px;
+}
+
+.ad-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 600px;
+}
+
+.ad-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:700px
+}
+
+.ad-mobile  {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+} 
+
+@media (min-width: 999px) {
+    .ad-mobile  {
+        display: none;
+
+    }
+}
+
+@media (max-width: 999px) {
+    .ad-left, .ad-right, .ad-bottom {
+        display: none;
+    }
+}
+
